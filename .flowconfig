@@ -1,6 +1,7 @@
 [ignore]
 .*/node_modules/*
 .*.json*
+.*.spec.*
 [include]
 src/
 [libs]
