@@ -8,10 +8,13 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chai": "^3.5.0",
     "eslint": "^3.19.0",
     "eslint-plugin-flowtype": "^2.33.0",
     "eslint-plugin-import": "^2.2.0",
     "flow-bin": "^0.46.0",
+    "moch": "^0.0.1",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
@@ -28,6 +31,7 @@
     "run:app": "babel-node src/index.js",
     "run:app:full": "yarn run:eslint && yarn run:flow && yarn run:app",
     "build:app": "babel src/ -d lib/",
-    "run:app:build": "node lib/index"
+    "run:app:build": "node lib/index",
+    "run:test": "mocha --compilers js:babel-core/register"
   }
 }
