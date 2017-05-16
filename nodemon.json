@@ -1,0 +1,5 @@
+{
+ "events": {
+     "restart": "yarn run:eslint && yarn run:flow"
+   }
+}
