@@ -29,3 +29,4 @@ node_modules
 .vscode
 npm-debug.log
 yarn*
+lib
